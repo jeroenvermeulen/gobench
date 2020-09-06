@@ -244,6 +244,7 @@ func NewConfiguration() *Configuration {
 		configuration.postData = data
 	}
 
+        configuration.myClient.ReadBufferSize = 16384
 	configuration.myClient.ReadTimeout = time.Duration(readTimeout) * time.Millisecond
 	configuration.myClient.WriteTimeout = time.Duration(writeTimeout) * time.Millisecond
 	configuration.myClient.MaxConnsPerHost = clients
@@ -308,6 +309,7 @@ func client(configuration *Configuration, result *Result, done *sync.WaitGroup) 
 			fasthttp.ReleaseResponse(resp)
 
 			if err != nil {
+                                fmt.Printf("ERROR: %+v\n", err)
 				result.networkFailed++
 				continue
 			}
