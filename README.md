@@ -62,7 +62,7 @@ Usage
 ================
 
 1. download gobench
-    ```go get github.com/cmpxchg16/gobench```
+    ```go get github.com/jeroenvermeulen/gobench```
 1. run some http server on port 80
 2. run gobench for HTTP GET
 
