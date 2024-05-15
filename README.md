@@ -18,7 +18,7 @@ The funny part - I did some benchmark to the client tester tool and not to the s
 
 ###Siege:
 
-    $>siege -b -t10S -c500 http://localhost:80/
+    $ siege -b -t10S -c500 http://localhost:80/
     
     ** SIEGE 2.70
     ** Preparing 500 concurrent users for battle.
@@ -39,7 +39,7 @@ The funny part - I did some benchmark to the client tester tool and not to the s
     
 ###GoBench:
 
-    $>gobench -k=true -u http://localhost:80 -c 500 -t 10
+    $ gobench -k=true -u http://localhost:80 -c 500 -t 10
     Dispatching 500 clients
     Waiting for results...
 
@@ -66,11 +66,11 @@ Usage
 1. run some http server on port 80
 2. run gobench for HTTP GET
 
-    ```$>gobench -u http://localhost:80 -k=true -c 500 -t 10```
+    ```$ gobench -u http://localhost:80 -k=true -c 500 -t 10```
     
 3. run gobench for HTTP POST
 
-    ```$>gobench -u http://localhost:80 -k=true -c 500 -t 10 -d /tmp/post```
+    ```$ gobench -u http://localhost:80 -k=true -c 500 -t 10 -d /tmp/post```
 
 
 Notes
