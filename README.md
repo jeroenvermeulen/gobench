@@ -77,7 +77,7 @@ Notes
 ================
 
 2. Because it's a test tool, in HTTPS the ceritificate verification is insecure
-3. use Go >= 1.5 (fasthttp require it)
+3. use Go >= 1.20 (fasthttp require it)
 
 Help
 ================
